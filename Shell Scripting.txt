@@ -1,0 +1,12 @@
+Shell Scripting
+
+To check bash support in your operating system:
+
+#cat /etc/shells
+
+
+Create a file with .sh extension (Hello.sh)
+
+echo $BASH     # this will show your shell information
+
+
