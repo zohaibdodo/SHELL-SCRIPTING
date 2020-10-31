@@ -10,3 +10,53 @@ Create a file with .sh extension (Hello.sh)
 echo $BASH     # this will show your shell information
 
 
+When ever you need to take input from terminal then you will use "read" command
+##
+echo "Please enter any number"
+read name
+echo "You have entered $name"
+##
+
+When you want take input on same line:
+
+read -p 'name : ' username
+echo "name : $username"
+
+#For Passwords or to hide text:
+
+read -sp 'password : ' password
+
+#To insert one line space
+echo
+#To print hidden input:
+
+echo 'password : ' $password 
+
+For array:
+
+echo "Enter names : "
+read -a names
+echo "Names : ${names[0]} ${names[1]}"
+
+By Default if you have not set any variable then it will store in $REPLY variable:
+
+read
+echo $REPLY
+
+Pass argument:
+
+echo $1 $2 $3 'echo $1 $2 $3'
+
+If then else condition:
+
+if [condition]
+ then 
+  statement 
+fi     # To end the if loop
+
+count=10
+
+if [ $count -eq 10 ]
+then 
+  echo "Condition is true"
+fi
