@@ -1,14 +1,16 @@
-Shell Scripting
+****Shell Scripting****
 
 To check bash support in your operating system:
 
 #cat /etc/shells
 
+To determine Shell
+
+#echo $shell
 
 Create a file with .sh extension (Hello.sh)
 
 echo $BASH     # this will show your shell information
-
 
 When ever you need to take input from terminal then you will use "read" command
 ##
