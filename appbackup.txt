@@ -1,0 +1,26 @@
+#!/usr/bin/bash
+echo "SBLUAT Application Backup Initiated ..."
+cd /uat2
+echo "Enter COB date For which You are going to Execute(e.g:DDMMYY)"
+read cobdate
+#echo $cobdate
+echo "Type of Application Backup (Type "Before" or "After" Backup If more then One COB will be executed on same day type Before1 or After1"
+read bkup
+cb="$bkup"_"$cobdate"
+echo $cb
+echo $bkup
+tar cvf - bnk | gzip > /backup/SBLUAT_bnk_$cb.tar.gz |tee -a /syslogs/sbluatbkup.log
+if [ $? -eq 0 ]
+then
+echo "SBLUAT Application Backup Completed"
+echo "SBLUAT Application Backup Completed" > /home/uat2/output/backup_email.log
+echo "Backup Type: $bkup COB $cobdate" >> /home/uat2/output/backup_email.log
+#echo "Backup Name: mock4.1_bnk_$cb.tar.gz" >> /home/uat2/output/backup_email.log
+mail -s "SBLUAT Application Backup Status-$cobdate" ahmed.muhammad@samba.com.pk naveed.raza@samba.com.pk furqan.k@samba.com.pk shoaib.ahmed@samba.com.pk kenny.danish@samba.com.pk < /home/uat2/output/backup_email.log
+else
+echo "SBLUAT Application Backup Failed" > /home/uat2/output/backup_email.log
+echo "Check Filesystem Space & Contact System Administrator" >> /home/uat2/output/backup_email.log
+echo "SBLUAT Application Backup Failed" 
+mail -s "SBLUAT Application Backup Status-$cobdate" furqan.k@samba.com.pk kenny.danish@samba.com.pk naveed.raza@samba.com.pk ahmed.muhammad@samba.com.pk < /home/uat2/output/backup_email.log
+fi
+
