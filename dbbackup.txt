@@ -1,0 +1,37 @@
+clear
+echo "======================================"
+echo
+echo "ONLINE DB Backup Script"
+echo
+echo "======================================"
+
+echo
+echo "List of database"
+echo
+db2 list db directory |grep "Database name"
+echo
+echo "Type database name"
+read dbname
+echo "Enter COB date For which You are going to Execute(e.g:DDMMYY)"
+read cobdate
+echo "Type of Application Backup (Type "Before" or "After" Backup If more then One COB will be executed on same day type Before1 or After1"
+read bkup
+cb="$dbname"_"$bkup"_"$cobdate"_COB
+mkdir -p /backuplivedr/144.29/$cb
+echo $cb
+
+db2 connect to $dbname
+date
+
+date > backup_rpt.txt
+
+db2 backup database $dbname online to /backuplivedr/144.29/$cb compress >> backup_rpt.txt
+date
+
+date >> backup_rpt.txt
+du -ms /backuplivedr/144.29/$cb  >> backup_rpt.txt
+echo "Current DB Backup Size"
+du -ms /backuplivedr/144.29/$cb
+echo "Your $dbname-$bkup-$cobdate DB Backup is Created"
+
+mail -s "$dbname-$bkup-$cobdate DB ONLINE BACKUP"  < backup_rpt.txt furqan.k@samba.com.pk kenny.danish@samba.com.pk Asim.Sardar@samba.com.pk Rahat.Ali@samba.com.pk
