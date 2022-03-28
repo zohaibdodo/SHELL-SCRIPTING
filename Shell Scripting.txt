@@ -47,7 +47,7 @@ echo $REPLY
 
 Pass argument:
 
-echo $1 $2 $3 'echo $1 $2 $3'
+echo $1 $2 $3 ' > echo $1 $2 $3'
 
 If then else condition:
 
