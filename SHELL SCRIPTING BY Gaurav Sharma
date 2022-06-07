@@ -1,0 +1,23 @@
+Youtube Videos by Gaurav Sharma:
+Date: 6 June 2022 10:08PM
+
+#Video 1: Introduction to Playlist
+
+#Video 2: What and Why shell scripting
+
+#Video 3: Built-in, Keywords and Commands in Shellscript
+To check which word is buildin, command or Keywords
+
+type -a echo
+
+if command is shell buildin then it will execute directly and if command is not found it will search in ($PATH) which is predefined.
+
+If you want to show echo with colors then:
+echo -e "\033[0;31m Success message here"
+echo -e "\033[0;32m Success message here"
+echo -e "\033[0;33m Success message here"
+
+Video 7: Comments
+
+Use hash for comments.
+
