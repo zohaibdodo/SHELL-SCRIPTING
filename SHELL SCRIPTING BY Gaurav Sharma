@@ -51,6 +51,58 @@ echo ${HOME}
 echo ${$}       # process id
 echo ${PPID}    # parent process id
 
+Video 11:
 
+#! /bin/bash
+
+read -p "Please enter your name:" name 
+read -p "Please enter your age:" age
+
+echo "Your name is $name and your age is $age"
+
+For secret password:
+
+Use -s for secret password
+
+Video 12: Command line arguments
+
+You take input from command while running script
+
+#! /bin/bash
+
+echo ${0}
+echo ${1}
+echo ${2}
+
+./commandlineargument.sh "zohaib" "shabbir" 3
+
+Video 13:
+
+use curly braces instead while giving command line argument.
+
+echo $# count for command line arguments
+echo $@ print all command line arguments
+
+Video 14:
+
+Use ` ` back tick or round brakets ( ) to save output of command in variable
+
+date_time=$(date +"%D-%T")
+
+Video 15: Readonly variable
+
+Video 16: How to Convert a String to Upper and Lower Case in Shell Script
+
+For Upper case:
+echo "${string}"
+echo "${string^}"
+echo "${string^^}"
+
+For Lower case:
+echo "${string}"
+echo "${string,}"
+echo "${string,,}"
+
+${#string} this will print length of string variable
 
 
