@@ -19,6 +19,38 @@ echo -e "\033[0;33m Success message here"
 
 Video 7: Comments
 
-Use hash for comments.
+"#" Use hash for comments.
 
-Single quote is called strong quote which do not a
+Single quote  ' ' is called strong quote which prints as it is.
+
+"\t" tab which is almost 8 spaces.
+"\v" vertical tab.
+"\n" for new lines.
+
+Video 9:
+
+User define variables
+System define variables 
+
+use variable like "${name}
+
+for concatenate variables: ${name}${age}
+
+variable names cannot be reserved words
+Variable bame cannot have whitespace in between
+the variable name cannot have special characters
+the first character of the variable name cannot be a number. 
+
+Video 10:
+
+$env
+
+We use system variable in capital letters.
+
+echo ${HOME}
+echo ${$}       # process id
+echo ${PPID}    # parent process id
+
+
+
+
