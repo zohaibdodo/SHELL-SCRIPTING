@@ -17,7 +17,7 @@ echo -e "\033[0;31m Success message here"
 echo -e "\033[0;32m Success message here"
 echo -e "\033[0;33m Success message here"
 
-Video 7: Comments
+#Video 7: Comments
 
 "#" Use hash for comments.
 
@@ -27,7 +27,7 @@ Single quote  ' ' is called strong quote which prints as it is.
 "\v" vertical tab.
 "\n" for new lines.
 
-Video 9:
+#Video 9:
 
 User define variables
 System define variables 
@@ -41,7 +41,7 @@ Variable bame cannot have whitespace in between
 the variable name cannot have special characters
 the first character of the variable name cannot be a number. 
 
-Video 10:
+#Video 10:
 
 $env
 
@@ -51,7 +51,7 @@ echo ${HOME}
 echo ${$}       # process id
 echo ${PPID}    # parent process id
 
-Video 11:
+#Video 11:
 
 #! /bin/bash
 
@@ -76,22 +76,22 @@ echo ${2}
 
 ./commandlineargument.sh "zohaib" "shabbir" 3
 
-Video 13:
+#Video 13:
 
 use curly braces instead while giving command line argument.
 
 echo $# count for command line arguments
 echo $@ print all command line arguments
 
-Video 14:
+#Video 14:
 
 Use ` ` back tick or round brakets ( ) to save output of command in variable
 
 date_time=$(date +"%D-%T")
 
-Video 15: Readonly variable
+#Video 15: Readonly variable
 
-Video 16: How to Convert a String to Upper and Lower Case in Shell Script
+#Video 16: How to Convert a String to Upper and Lower Case in Shell Script
 
 For Upper case:
 echo "${string}"
@@ -104,5 +104,3 @@ echo "${string,}"
 echo "${string,,}"
 
 ${#string} this will print length of string variable
-
-

@@ -2,10 +2,10 @@ Source: TUTORIALSPOINT
 
 https://www.tutorialspoint.com/unix/unix-using-variables.htm
 
-What is Shell Scripting?
+Q) What is Shell Scripting?
 Shell script is an environment in which we can run our commands, programs and scripts to acheive a certain goal. 
 
-What is Shell Prompt?
+Q) What is Shell Prompt?
 Like command prompt
 
 Shell Types?
@@ -45,3 +45,9 @@ $unset variable_name
 
 You cannot use the unset command to unset variables that are marked readonly.
 
+Shell Loops:
+
+The while loop: the while loop executes the given commands until the given condition remains true
+The for loop: 
+The until loop
+The select loop
