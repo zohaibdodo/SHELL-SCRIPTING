@@ -51,3 +51,15 @@ The while loop: the while loop executes the given commands until the given condi
 The for loop: 
 The until loop
 The select loop
+
+Example:
+
+./command -yes -no /home/username
+so now..
+$# = 3
+$* = -yes -no /home/username
+$@ = ("-yes" "-no" "/home/username")
+$0 = ./command
+$1 = -yes
+$2 = -no
+$3 = /home/username
