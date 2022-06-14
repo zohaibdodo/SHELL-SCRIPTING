@@ -105,4 +105,17 @@ echo "${string,,}"
 
 ${#string} this will print length of string variable
 
+Video 17: How to Convert a String to SubString - String Manipulation
+
+string="abcdefghijklmnopqrstuvwxyz"
+
+echo "${string:0} # This will print from very first letter.
+echo "${string:1} # This will skip first letter and start printing from second letter.
+
+echo "${string:0:3} # This will start from 0 and go till three letters.
+echo "${string: -5} # This will start from left and go till five letters.
+
+echo "${string#a*c} # from starting,  Shortest
+echo "${string##a*c} # from starting, longest match
+
 
