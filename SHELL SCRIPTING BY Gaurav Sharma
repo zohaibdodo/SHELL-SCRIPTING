@@ -36,9 +36,9 @@ use variable like "${name}
 
 for concatenate variables: ${name}${age}
 
-variable names cannot be reserved words
-Variable bame cannot have whitespace in between
-the variable name cannot have special characters
+variable names cannot be reserved words.
+Variable name cannot have whitespace in between them.
+the variable name cannot have special characters.
 the first character of the variable name cannot be a number. 
 
 #Video 10:
