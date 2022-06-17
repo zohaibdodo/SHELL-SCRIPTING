@@ -120,3 +120,32 @@ echo "${string##a*c} # from starting, longest match
 
 
 ${#string} this will print length of string variable
+
+Video 18: How to Set Default Value of a Variable - Variable Default Value
+
+For Default value:
+read -p "Please enter your name:"
+name=${name:-World}
+echo "Hello ${name^}"
+
+For unset variable:
+yourname=${unsetvariable-Manish}
+echo $yourname
+
+For empty string variable:
+myname=""
+mytestname=${myname-Kali}
+echo ${mytestname}
+
+Video 19: Check is Command line variable passed or not
+
+: called Null command which always shows successful status.
+
+#If variable is set
+#! /bin/bash
+
+name="Gaurav"
+: ${name :? "Please enter variable values."}
+echo "I am here"
+
+
