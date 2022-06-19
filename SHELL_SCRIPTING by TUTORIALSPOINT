@@ -78,14 +78,46 @@ Arithmetic Operators (+,-,/,*,%,=,==,!=)
 Relational Operators (-eq,-ne,-gt,-lt,-ge,-le)
 Boolean Operators (!,-o,-a)
 String Operators (=,!=,-z,-n,str)
-File Test Operators ()
+File Test Operators (-b,-c,-d,-f,-g,-k,-p,-t,-u,-r,-w,-x,-s,-e)
 
-Shell Loops:
+
+Shell Decision Making:
+
+The if...else statement
+The case...esac statement
+
+Shell Loop Types:
 
 The while loop: the while loop executes the given commands until the given condition remains true
 The for loop: 
-The until loop
+The until loop : the until loop executes until a given condition becomes true.
 The select loop
+
+Shell Loop Control:
+
+break statement : It is used to terminate the execution of the entire loop, after completion of code up to the break statement It then steps down to the code following the end of the loop.
+
+#!/bin/sh
+
+a=0
+
+while [ $a -lt 10 ]
+do
+   echo $a
+   if [ $a -eq 5 ]
+   then
+      break
+   fi
+   a=`expr $a + 1`
+done
+
+continue statement: 
+
+
+
+
+
+
 
 Example:
 

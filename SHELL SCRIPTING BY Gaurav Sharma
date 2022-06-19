@@ -120,3 +120,8 @@ echo "${string##a*c} # from starting, longest match
 
 
 ${#string} this will print length of string variable
+
+Video 20: Arithmetic Operator - How to do airthmetic operator in shellscript
+
+#! /bin/bash
+
