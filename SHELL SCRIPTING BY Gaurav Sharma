@@ -121,12 +121,6 @@ echo "${string##a*c} # from starting, longest match
 
 ${#string} this will print length of string variable
 
-<<<<<<< HEAD
-Video 20: Arithmetic Operator - How to do airthmetic operator in shellscript
-
-#! /bin/bash
-
-=======
 Video 18: How to Set Default Value of a Variable - Variable Default Value
 
 For Default value:
@@ -155,4 +149,3 @@ name="Gaurav"
 echo "I am here"
 
 
->>>>>>> c7a21b9530e62b7969d20b88fd295c97b927e9c7
