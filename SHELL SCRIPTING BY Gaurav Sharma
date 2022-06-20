@@ -121,7 +121,38 @@ echo "${string##a*c} # from starting, longest match
 
 ${#string} this will print length of string variable
 
+<<<<<<< HEAD
 Video 20: Arithmetic Operator - How to do airthmetic operator in shellscript
 
 #! /bin/bash
 
+=======
+Video 18: How to Set Default Value of a Variable - Variable Default Value
+
+For Default value:
+read -p "Please enter your name:"
+name=${name:-World}
+echo "Hello ${name^}"
+
+For unset variable:
+yourname=${unsetvariable-Manish}
+echo $yourname
+
+For empty string variable:
+myname=""
+mytestname=${myname-Kali}
+echo ${mytestname}
+
+Video 19: Check is Command line variable passed or not
+
+: called Null command which always shows successful status.
+
+#If variable is set
+#! /bin/bash
+
+name="Gaurav"
+: ${name :? "Please enter variable values."}
+echo "I am here"
+
+
+>>>>>>> c7a21b9530e62b7969d20b88fd295c97b927e9c7
