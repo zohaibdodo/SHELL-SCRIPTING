@@ -216,13 +216,28 @@ man test for complete
 
 Video 30: What is Not Operator in Shellscript - How to use not operator in bash
 
+#! /bin/bash
 
+name="saurav sharma"
+othername="gaurav sharma"
 
+if [[ ! ${name} == ${othername} ]]
+then
+    echo "both are same"
+fi
 
+Video 31: AND operator in Shellscript - && in shellscript
 
+#! /bin/bash
 
+OS_TYPE=$(uname)
 
+if [[ ${OS_TYPE} == "Linux" && ${UID} -eq 1000 ]]
+then
+    echo "User is root user and OS is Linux"
+fi
 
+Video 32: OR Operator
 
-
+Video 33: If-Else In Shellscript - If-Else Syntax In Shellscript
 
