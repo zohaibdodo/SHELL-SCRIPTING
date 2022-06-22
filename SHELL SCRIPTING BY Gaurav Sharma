@@ -148,4 +148,81 @@ name="Gaurav"
 : ${name :? "Please enter variable values."}
 echo "I am here"
 
+Video 26: What is $? and test command in linux - $? and Test Command
+
+echo $? # for exit status
+
+a=5
+test $a -eq 5
+
+0 #result
+
+Video 27:
+
+if command
+then block (command or statement)
+fi
+
+Video 28: How to Use If With [ (Square brackets)-Integer Comparison Shellscript
+
+test command and square brackets are used  to comparison
+
+#! /bin/bash
+
+num=5
+
+if [ $num -eq 5 ]
+then 
+    echo "Number is 5"
+fi
+
+# man test for all the comparison details
+
+Video 28: Shell Script tutorials - 28 - [ vs [[ in Shellscript and String Comparison in Shellscript
+
+[ "zohaib" == "zohaib" ]
+
+Use double square brackets for comparisons.
+
+name="zohaib ahmed"
+if [[ -n ${name} ]]
+then 
+  echo "length of string is non zero"
+fi
+
+-n "non zero"
+-z "zero"
+!= "not equal to"
+
+Video 29: How to Check File is Exist, Directory, Block Device, Character Device
+
+#! /bin/bash
+
+file_full_path="/home"
+
+if [[ -d $file_full_path ]]
+then 
+  echo "$file_full_path is a dir"
+fi
+
+man test for complete 
+
+-d directory
+-b block
+-c charactor
+-e file exist
+-r read
+-w write
+
+Video 30: What is Not Operator in Shellscript - How to use not operator in bash
+
+
+
+
+
+
+
+
+
+
 
