@@ -96,15 +96,12 @@ The until loop : the until loop executes until a given condition becomes true.
 The select loop
 
 Nested loops:
-
+Loop with in loop.
 
 ### Shell Loop Control:
 
-INFINITE LOOP
-BREAK STATEMENT
-CONTINUOUS STATEMENT
-
-BREAK STATEMENT : It is used to terminate the execution of the entire loop, after completion of code up to the break statement It then steps down to the code following the end of the loop.
+INFINITE LOOP: A loop may continue forever if the required condition is not met
+BREAK STATEMENT: It is used to terminate the execution of the entire loop, after completion of code up to the break statement It then steps down to the code following the end of the loop.
 
 #!/bin/sh
 
