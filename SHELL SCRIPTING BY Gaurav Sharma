@@ -64,7 +64,7 @@ For secret password:
 
 Use -s for secret password
 
-Video 12: Command line arguments
+#Video 12: Command line arguments
 
 You take input from command while running script
 
@@ -74,7 +74,7 @@ echo ${0}
 echo ${1}
 echo ${2}
 
-./commandlineargument.sh "zohaib" "shabbir" 3
+$./commandlineargument.sh "zohaib" "shabbir" 3
 
 #Video 13:
 
@@ -118,9 +118,6 @@ echo "${string: -5} # This will start from left and go till five letters.
 echo "${string#a*c} # from starting,  Shortest
 echo "${string##a*c} # from starting, longest match
 
-
-${#string} this will print length of string variable
-
 Video 18: How to Set Default Value of a Variable - Variable Default Value
 
 For Default value:
@@ -137,18 +134,19 @@ myname=""
 mytestname=${myname-Kali}
 echo ${mytestname}
 
-Video 19: Check is Command line variable passed or not
+#Video 19: Check is Command line variable passed or not
 
-: called Null command which always shows successful status.
+":" is called Null command which always shows successful status.
 
 #If variable is set
+
 #! /bin/bash
 
 name="Gaurav"
 : ${name :? "Please enter variable values."}
 echo "I am here"
 
-Video 26: What is $? and test command in linux - $? and Test Command
+#Video 26: What is $? and test command in linux
 
 echo $? # for exit status
 
@@ -157,7 +155,7 @@ test $a -eq 5
 
 0 #result
 
-Video 27:
+#Video 27:
 
 if command
 then block (command or statement)

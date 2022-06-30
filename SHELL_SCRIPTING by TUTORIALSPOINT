@@ -47,7 +47,7 @@ $unset variable_name
 
 You cannot use the unset command to unset variables that are marked readonly.
 
-Variable Types:
+###Variable Types:
 Local Variables
 Environment Variables
 Shell Variables
@@ -65,7 +65,8 @@ $! : The process number of the last background command.
 
 Difference b/w $* and $@
 
-"$*" special parameter takes the entire list as one argument with spaces between and the "$@" special parameter takes the entire list and separates it into separate arguments
+"$*" special parameter takes the entire list as one argument with spaces between 
+"$@" special parameter takes the entire list and separates it into separate arguments
 
 ### Shell Arrays:
 
@@ -95,7 +96,7 @@ The for loop:
 The until loop : the until loop executes until a given condition becomes true.
 The select loop
 
-Nested loops:
+###Nested loops:
 Loop with in loop.
 
 ### Shell Loop Control:
