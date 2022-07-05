@@ -161,7 +161,7 @@ if command
 then block (command or statement)
 fi
 
-Video 28: How to Use If With [ (Square brackets)-Integer Comparison Shellscript
+#Video 28: How to Use If With [ (Square brackets)-Integer Comparison Shellscript
 
 test command and square brackets are used  to comparison
 
@@ -176,7 +176,7 @@ fi
 
 # man test for all the comparison details
 
-Video 28: Shell Script tutorials - 28 - [ vs [[ in Shellscript and String Comparison in Shellscript
+#Video 29: Shell Script tutorials - 28 - [ vs [[ in Shellscript and String Comparison in Shellscript
 
 [ "zohaib" == "zohaib" ]
 
@@ -192,7 +192,7 @@ fi
 -z "zero"
 != "not equal to"
 
-Video 29: How to Check File is Exist, Directory, Block Device, Character Device
+#Video 30: How to Check File is Exist, Directory, Block Device, Character Device
 
 #! /bin/bash
 
@@ -212,7 +212,7 @@ man test for complete
 -r read
 -w write
 
-Video 30: What is Not Operator in Shellscript - How to use not operator in bash
+#Video 31: What is Not Operator in Shellscript - How to use not operator in bash
 
 #! /bin/bash
 
@@ -224,7 +224,7 @@ then
     echo "both are same"
 fi
 
-Video 31: AND operator in Shellscript - && in shellscript
+#Video 32: AND operator in Shellscript - && in shellscript
 
 #! /bin/bash
 
@@ -235,7 +235,6 @@ then
     echo "User is root user and OS is Linux"
 fi
 
-Video 32: OR Operator
+#Video 33: OR Operator
 
-Video 33: If-Else In Shellscript - If-Else Syntax In Shellscript
-
+#Video 34: If-Else In Shellscript - If-Else Syntax In Shellscript
