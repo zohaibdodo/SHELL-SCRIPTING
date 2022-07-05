@@ -32,7 +32,7 @@ Single quote  ' ' is called strong quote which prints as it is.
 User define variables
 System define variables 
 
-use variable like "${name}
+use variable like "${name}"
 
 for concatenate variables: ${name}${age}
 
@@ -105,7 +105,7 @@ echo "${string,,}"
 
 ${#string} this will print length of string variable
 
-Video 17: How to Convert a String to SubString - String Manipulation
+#Video 17: How to Convert a String to SubString - String Manipulation
 
 string="abcdefghijklmnopqrstuvwxyz"
 
@@ -118,7 +118,7 @@ echo "${string: -5} # This will start from left and go till five letters.
 echo "${string#a*c} # from starting,  Shortest
 echo "${string##a*c} # from starting, longest match
 
-Video 18: How to Set Default Value of a Variable - Variable Default Value
+#Video 18: How to Set Default Value of a Variable - Variable Default Value
 
 For Default value:
 read -p "Please enter your name:"
