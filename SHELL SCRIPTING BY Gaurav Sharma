@@ -3,6 +3,24 @@ Date: 6 June 2022 10:08PM
 
 #Video 1: Introduction to Playlist
 
+### What is Shell Scripting?
+Shell script is an environment in which we can run our commands, programs and scripts to acheive a certain goal. 
+
+### What is Shell Prompt?
+Like command prompt
+
+### Shell Types?
+Bourne Shell (sh)
+Korn Shell (ksh)
+Bourne Again Shell (bash)
+POSIX shell (sh)
+
+C Shell:
+C shell (csh)
+TENEX/TOPS C shell (tcsh)
+
+Shebang : #!/bin/bash
+
 #Video 2: What and Why shell scripting
 
 #Video 3: Built-in, Keywords and Commands in Shellscript
@@ -52,6 +70,8 @@ echo ${$}       # process id
 echo ${PPID}    # parent process id
 
 #Video 11:
+
+
 
 #! /bin/bash
 

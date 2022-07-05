@@ -1,24 +1,9 @@
+##SHELL SCRIPTING##
+
 Source: TUTORIALSPOINT
 
 https://www.tutorialspoint.com/unix/unix-using-variables.htm
 
-### What is Shell Scripting?
-Shell script is an environment in which we can run our commands, programs and scripts to acheive a certain goal. 
-
-### What is Shell Prompt?
-Like command prompt
-
-### Shell Types?
-Bourne Shell (sh)
-Korn Shell (ksh)
-Bourne Again Shell (bash)
-POSIX shell (sh)
-
-C Shell:
-C shell (csh)
-TENEX/TOPS C shell (tcsh)
-
-Shebang : #!/bin/bash
 
 ### Variables:
 The name of a variable can contain only letters (a to z or A to Z), numbers ( 0 to 9) or the underscore character ( _ ).
