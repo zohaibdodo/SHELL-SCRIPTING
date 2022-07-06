@@ -292,6 +292,10 @@ fi
 
 #Video 32: AND operator in Shellscript - && in shellscript
 
+$ls && echo "Hello World" && date
+
+If first command is successful then it will goto execute second command then third one. but previous commands must run successfully.
+
 #! /bin/bash
 
 OS_TYPE=$(uname)
