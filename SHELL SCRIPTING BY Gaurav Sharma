@@ -19,23 +19,31 @@ C Shell:
 C shell (csh)
 TENEX/TOPS C shell (tcsh)
 
-Shebang : #!/bin/bash
+
 
 #Video 2: What and Why shell scripting
 
-#Video 3: Built-in, Keywords and Commands in Shellscript
+#Video 3: First Shell Script - Hello World Shell Script 
+
+#Video 4: First Shell Script - Hello World Shell Script
+
+Shebang : #!/bin/bash
+
+#Video 5: Built-in, Keywords and Commands in Shellscript
 To check which word is buildin, command or Keywords
 
 type -a echo
 
 if command is shell buildin then it will execute directly and if command is not found it will search in ($PATH) which is predefined.
 
+#Video 6: Print Hello World - Print in Different Color in Shellscipt
+
 If you want to show echo with colors then:
 echo -e "\033[0;31m Success message here"
 echo -e "\033[0;32m Success message here"
 echo -e "\033[0;33m Success message here"
 
-#Video 7: Comments
+#Video 7: Comments and Echo in Shell script - Multiple Line Print Statement
 
 "#" Use hash for comments.
 
@@ -45,10 +53,12 @@ Single quote  ' ' is called strong quote which prints as it is.
 "\v" vertical tab.
 "\n" for new lines.
 
-#Video 9:
+#Video 8: User Define Variable in Shell Script - How to Define Variable.
 
 User define variables
 System define variables 
+
+#Video 9: Rules for Naming Variable Name - Valid Variable Name in Shell Script
 
 ### Variables:
 The name of a variable can contain only letters (a to z or A to Z), numbers ( 0 to 9) or the underscore character ( _ ).
@@ -89,7 +99,7 @@ Variable name cannot have whitespace in between them.
 the variable name cannot have special characters.
 the first character of the variable name cannot be a number. 
 
-#Video 10:
+#Video 10: System Defined Variable in Shell Script - Shell Variables 
 
 $env
 
@@ -99,7 +109,9 @@ echo ${HOME}
 echo ${$}       # process id
 echo ${PPID}    # parent process id
 
-#Video 11:
+
+
+#Video 11: Take Input From User in Shell Script - Read Data From User
 
 #! /bin/bash
 
@@ -124,20 +136,20 @@ echo ${2}
 
 $./commandlineargument.sh "zohaib" "shabbir" 3
 
-#Video 13:
+#Video 13: Command line arguments
 
 use curly braces instead while giving command line argument.
 
 echo $# count for command line arguments
 echo $@ print all command line arguments
 
-#Video 14:
+#Video 14: Assign a Command's Output to a Variable in Shell Script
 
 Use ` ` back tick or round brakets ( ) to save output of command in variable
 
 date_time=$(date +"%D-%T")
 
-#Video 15: Readonly variable
+#Video 15: How to create read only variable in Shell Script (Readonly variable)
 
 Read-only Variables
 Shell provides a way to mark variables as read-only by using the read-only command. After a variable is marked read-only, its value cannot be changed.
@@ -215,6 +227,28 @@ echo ${mytestname}
 name="Gaurav"
 : ${name :? "Please enter variable values."}
 echo "I am here"
+
+#Video 20: - Arithmetic Operator - How to do airthmetic operator in shellscript
+
+### Shell Basic Operators:
+
+Arithmetic Operators (+,-,/,*,%,=,==,!=)
+Relational Operators (-eq,-ne,-gt,-lt,-ge,-le)
+Boolean Operators (!,-o,-a)
+String Operators (=,!=,-z,-n,str)
+File Test Operators (-b,-c,-d,-f,-g,-k,-p,-t,-u,-r,-w,-x,-s,-e)
+
+
+
+21 - Functions - Functions in Shellscript 
+22 - How Shell ScriptLoad - Functions in Shellscript -2
+23 - How to Pass Arguments to a Functions in Shellscript - 
+24 - How to Create Local Variable in Functions - Local in Shellscript 
+25 - What is $? and test command in linux - $? and Test Command 
+26 - How to Use If With Command - Conditional Statement in Shellscript 
+27 - How to Use If With [ (Square brackets)-Integer Comparison Shellscript
+
+
 
 #Video 26: What is $? and test command in linux
 
