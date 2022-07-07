@@ -150,6 +150,10 @@ NAME="Zara Ali"
 readonly NAME
 NAME="Qadiri"
 
+For multiple inputs:
+
+read name1 name2
+
 Unsetting Variables:
 Unsetting or deleting a variable directs the shell to remove the variable from the list of variables that it tracks. Once you unset a variable, you cannot access the stored value in the variable.
 
@@ -304,3 +308,5 @@ fi
 #Video 33: OR Operator
 
 #Video 34: If-Else In Shellscript - If-Else Syntax In Shellscript
+
+

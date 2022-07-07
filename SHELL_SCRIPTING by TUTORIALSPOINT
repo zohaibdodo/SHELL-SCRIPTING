@@ -4,13 +4,8 @@ Source: TUTORIALSPOINT
 
 https://www.tutorialspoint.com/unix/unix-using-variables.htm
 
-### Shell Arrays:
 
-Format to create an array
-array_name[index]=value
 
-To access an array
-${array_name[value]}
 
 ### Shell Basic Operators:
 
