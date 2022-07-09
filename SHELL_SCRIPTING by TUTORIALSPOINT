@@ -4,21 +4,9 @@ Source: TUTORIALSPOINT
 
 https://www.tutorialspoint.com/unix/unix-using-variables.htm
 
-### Shell Arrays:
 
-Format to create an array
-array_name[index]=value
 
-To access an array
-${array_name[value]}
 
-### Shell Basic Operators:
-
-Arithmetic Operators (+,-,/,*,%,=,==,!=)
-Relational Operators (-eq,-ne,-gt,-lt,-ge,-le)
-Boolean Operators (!,-o,-a)
-String Operators (=,!=,-z,-n,str)
-File Test Operators (-b,-c,-d,-f,-g,-k,-p,-t,-u,-r,-w,-x,-s,-e)
 
 ### Shell Decision Making:
 

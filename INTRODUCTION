@@ -47,9 +47,7 @@ echo "Enter Name:"
 read name
 echo "Your name $name is so cute"
 
-For multiple inputs:
 
-read name1 name2
 
 For same line input:
 
@@ -64,9 +62,6 @@ read -sp "password : " pass_var
 echo "password :" $pass_var
 
 Flag -a: (Array)
-echo "Enter name :"
-read -a names
-echo "names : $names[0], $names[1]"
 
 If no variable is defined with read then output will go to reply variable
 
