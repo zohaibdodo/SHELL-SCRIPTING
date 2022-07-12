@@ -1,29 +1,41 @@
+"**************************************************************"
+"               Welcome to Shell Scripting                     "
+"**************************************************************"
 Youtube Videos by Gaurav Sharma:
 Date: 6 June 2022 10:08PM
 
 #Video 1: Introduction to Playlist
-
-### What is Shell Scripting?
-Shell script is an environment in which we can run our commands, programs and scripts to acheive a certain goal. 
-
 ### What is Shell Prompt?
-Like command prompt
+It is a terminal where a user types command to access system.
 
 ### Shell Types?
 Bourne Shell (sh)
 Korn Shell (ksh)
 Bourne Again Shell (bash)
 POSIX shell (sh)
-
-C Shell:
-C shell (csh)
+C Shell: shell (csh)
 TENEX/TOPS C shell (tcsh)
 
-
+###Where is the Shell Located?
+$which bash
 
 #Video 2: What and Why shell scripting
+### What is Shell Scripting?
+Shell script is an environment in which we can run our commands, programs and scripts to acheive a certain goal.
+Shell is interpreted by OS not compiled.
 
 #Video 3: First Shell Script - Hello World Shell Script 
+Create a Hello World Script:
+
+#! /bin/bash
+echo "Hello World"
+
+To execute this Script:
+#./hello.sh
+
+To change the permission:
+
+#chmod +x hello.sh
 
 #Video 4: First Shell Script - Hello World Shell Script
 
@@ -44,8 +56,7 @@ echo -e "\033[0;32m Success message here"
 echo -e "\033[0;33m Success message here"
 
 #Video 7: Comments and Echo in Shell script - Multiple Line Print Statement
-
-"#" Use hash for comments.
+x7Use hash for comments.
 
 Single quote  ' ' is called strong quote which prints as it is.
 
@@ -73,6 +84,12 @@ VAR_A!
 Local Variables
 Environment Variables
 Shell Variables
+
+For array:
+
+echo "Enter names : "
+read -a names
+echo "Names are: ${names[0]} ${names[1]}"
 
 ### Special Variables:
 
@@ -105,11 +122,14 @@ $env
 
 We use system variable in capital letters.
 
+System Variables:
 echo ${HOME}
 echo ${$}       # process id
 echo ${PPID}    # parent process id
-
-
+echo $BASH
+echo $BASH_VERSION
+echo $HOME
+echo $PWD
 
 #Video 11: Take Input From User in Shell Script - Read Data From User
 
@@ -124,6 +144,8 @@ For secret/silent password:
 
 Use -s for secret password
 
+If no variable is defined with read then output will go to $REPLY variable.
+
 #Video 12: Command line arguments
 
 You take input from command while running script
@@ -134,7 +156,7 @@ echo ${0}
 echo ${1}
 echo ${2}
 
-$./commandlineargument.sh "zohaib" "shabbir" 3
+$./commandlineargument.sh "zohaib" "shabbir" "3"
 
 #Video 13: Command line arguments
 
@@ -191,14 +213,14 @@ ${#string} this will print length of string variable
 
 string="abcdefghijklmnopqrstuvwxyz"
 
-echo "${string:0} # This will print from very first letter.
-echo "${string:1} # This will skip first letter and start printing from second letter.
+echo "${string:0}" # This will print from very first letter.
+echo "${string:1}" # This will skip first letter and start printing from second letter.
 
-echo "${string:0:3} # This will start from 0 and go till three letters.
-echo "${string: -5} # This will start from left and go till five letters.
+echo "${string:0:3}" # This will start from 0 and go till three letters.
+echo "${string: -5}" # This will start from left and go till five letters.
 
-echo "${string#a*c} # from starting,  Shortest
-echo "${string##a*c} # from starting, longest match
+echo "${string#a*c}" # from starting,  Shortest
+echo "${string##a*c}" # from starting, longest match
 
 #Video 18: How to Set Default Value of a Variable 
 
@@ -229,9 +251,7 @@ name="Gaurav"
 echo "I am here"
 
 #Video 20: - Arithmetic Operator - How to do airthmetic operator in shellscript
-
 ### Shell Basic Operators:
-
 Arithmetic Operators (+,-,/,*,%,=,==,!=)
 Relational Operators (-eq,-ne,-gt,-lt,-ge,-le)
 Boolean Operators (!,-o,-a)
@@ -246,9 +266,7 @@ File Test Operators (-b,-c,-d,-f,-g,-k,-p,-t,-u,-r,-w,-x,-s,-e)
 24 - How to Create Local Variable in Functions - Local in Shellscript 
 25 - What is $? and test command in linux - $? and Test Command 
 26 - How to Use If With Command - Conditional Statement in Shellscript 
-27 - How to Use If With [ (Square brackets)-Integer Comparison Shellscript
-
-
+27 - 
 
 #Video 26: What is $? and test command in linux
 
@@ -259,7 +277,7 @@ test $a -eq 5
 
 0 #result
 
-#Video 27:
+#Video 27: How to Use If With [ (Square brackets)-Integer Comparison Shellscript
 
 if command
 then block (command or statement)
@@ -347,4 +365,8 @@ fi
 
 #Video 34: If-Else In Shellscript - If-Else Syntax In Shellscript
 
+### Shell Decision Making:
+
+The if...else statement (if...fi statement, if...else...fi statement, if...elif..fi statement)
+The case...esac statement
 
