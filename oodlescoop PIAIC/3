@@ -1,0 +1,7 @@
+#! /bin/bash
+
+#Shell Script to read an integer value from user and print 
+
+echo "Enter an integer value"
+read n
+echo "Value of an integer:" $n

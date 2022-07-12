@@ -1,0 +1,7 @@
+#! /bin/bash
+
+#Shell Script to initialize Hello World String to a variable and print it on the console 
+
+hello="Hello World from variable"
+
+echo $hello
