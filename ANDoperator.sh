@@ -1,4 +1,3 @@
-
 #! /bin/bash
 
 OS_TYPE=$(uname)

@@ -4,12 +4,12 @@
 -d directory;    yes, then the condition becomes true.	[ -d $  ] is not true.
 -e file exists; is true even      is a directory but exists.	[ -e $  ] is true.
 -f is an ordinary   as opposed to a directory or special  ;    yes, then the condition becomes true.	[ -f $  ] is true.
--g  	       has its set group ID (SGID) bit set;    yes, then the condition becomes true.	[ -g $  ] is false.
--k  	       has its sticky bit set;    yes, then the condition becomes true.	[ -k $  ] is false.
--p  	       is a named pipe;    yes, then the condition becomes true.	[ -p $  ] is false.
--t  	       descriptor is open and associated with a terminal;    yes, then the condition becomes true.	[ -t $  ] is false.
--u  	       has its Set User ID (SUID) bit set;    yes, then the condition becomes true.	[ -u $  ] is false.
--r  	       is readable;    yes, then the condition becomes true.	[ -r $  ] is true.
--w  	       is writable;    yes, then the condition becomes true.	[ -w $  ] is true.
--x  	       is executable;    yes, then the condition becomes true.	[ -x $  ] is true.
--s  	       has size greater than 0;    yes, then condition becomes true.	[ -s $  ] is true.
+-g has its set group ID (SGID) bit set;    yes, then the condition becomes true.	[ -g $  ] is false.
+-k has its sticky bit set;    yes, then the condition becomes true.	[ -k $  ] is false.
+-p is a named pipe;    yes, then the condition becomes true.	[ -p $  ] is false.
+-t descriptor is open and associated with a terminal;    yes, then the condition becomes true.	[ -t $  ] is false.
+-u has its Set User ID (SUID) bit set;    yes, then the condition becomes true.	[ -u $  ] is false.
+-r is readable;    yes, then the condition becomes true.	[ -r $  ] is true.
+-w is writable;    yes, then the condition becomes true.	[ -w $  ] is true.
+-x is executable;    yes, then the condition becomes true.	[ -x $  ] is true.
+-s has size greater than 0;    yes, then condition becomes true.	[ -s $  ] is true.

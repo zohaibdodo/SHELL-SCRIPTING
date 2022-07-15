@@ -1,0 +1,10 @@
+#! /bin/bash
+
+read -p "Please enter an interger" n
+a=1
+echo "Printing Interger Numbers:"
+while [ $a -le $n ]
+do 
+echo $a
+a=`expr $a + 1`
+done
