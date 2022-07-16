@@ -1,0 +1,12 @@
+#!/bin/bash
+
+read -p "Enter the number of terms:" n
+sum=0
+a=1
+while [ $a -le $n ]
+do 
+  read a
+  sum=`expr $a + $sum`
+  i=`expr $i + 1`
+done
+echo "Sum is $sum" 
